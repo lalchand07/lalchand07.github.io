@@ -1,0 +1,58 @@
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+.passengers-form input[type=checkbox]:not(old) + label + label,
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -32px;
+  margin-right: 16px;
+  line-height  : 1.5em;
+}
+
+.passengers-form input[type=checkbox]:not(old) + label + label > span,
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    display: inline-block;
+    height: 18px;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    /* outline: 1px solid green; */
+    vertical-align: bottom;
+    border: 1px solid #abbc08; 
+    width: 18px;
+}
+
+.passengers-form input[type=checkbox]:not(old):checked + label + label > span,
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+  background       : #fff;
+}
+.passengers-form input[type=checkbox]:checked + label + label > span::before,
+input[type=checkbox]:not(old):checked + label > span::before{
+  content     : url(../images/icons/check.png);
+  display     : block;
+  width       : 1.2em;
+  color       : #abbc08;
+  font-size   : 0.875em;
+  line-height : 1.3em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+  background: #abbc08 none repeat scroll 0 0;
+    border: 0.0625em solid #abbc08;
+    display: block;
+    height: 8px;
+    margin: 4px;
+    width: 8px;
+}
