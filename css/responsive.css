@@ -397,6 +397,9 @@
 	.profile-pic-fiverr {
 	margin-bottom: 110px;
 	}
+	.profile-pic-fiverr.about-fiverr .fiverr-content {
+		left: 38%;
+	}
 }
 @media screen and (max-width: 640px){
 	.navbar.my-nav{
