@@ -394,6 +394,9 @@
 	#close-st-menu i {
 		font-size: 30px;
 	}
+	.profile-pic-fiverr {
+		margin-bottom: 110px;
+	}
 }
 @media screen and (max-width: 640px){
 	.navbar.my-nav{
